@@ -45,7 +45,7 @@ By deliberately avoiding abstraction-heavy frameworks like Pandas or NumPy, ever
 
 ## Poor resource management
 * **Problem:** The tractors ended up wasting resources mainly fuel due to poor ploughing techniques
-* **solution** Implement Boustrophedon sweep in ploughing by continuos iteration to find the most suitable
+* **solution** Implement Boustrophedon sweep in ploughing by ccontinuous iteration to find the most suitable
   <table>
   <tr>
     <td width="50%">
