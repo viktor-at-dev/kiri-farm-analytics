@@ -27,7 +27,7 @@ Design and build a zero-dependency Digital Twin in Python to enforce defensive s
 
 
 
-## Architectural Deep Dives & Code Proofs
+## Architectural Deep Dives 
 
 ### 1. Defensive State Management & Ledger Integrity
 * **Problem:** Simultaneous harvest entries across different farm locations risked throwing runtime `KeyError` exceptions or overwriting existing yields when keys were uninitialized.
@@ -53,4 +53,6 @@ Design and build a zero-dependency Digital Twin in Python to enforce defensive s
 </table>
 
 ## key Technical Outcomes: 
-1. Operates on standard Python deployments without pip dependencies, ideal for embedded edge systems deployed on remote farm machinery.Spatial 2.Efficiency: Reduced turning overhead and eliminated duplicate spatial coverage, directly lowering operational fuel usage across simulated field 3.trials.Deterministic Execution: Guaranteed $O(1)$ dictionary updates and linear time path generation without runtime dynamic library overhead.
+*  Operates on standard Python deployments without pip dependencies, ideal for embedded edge systems deployed on remote farm machinery.Spatial
+*  Efficiency: Reduced turning overhead and eliminated duplicate spatial coverage, directly lowering operational fuel usage across simulated field *
+*  trials.Deterministic Execution: Guaranteed $O(1)$ dictionary updates and linear time path generation without runtime dynamic library overhead.
