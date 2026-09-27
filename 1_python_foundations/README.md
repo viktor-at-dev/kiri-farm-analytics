@@ -13,9 +13,8 @@ The farm is a large enterprise comprising of numerous fields, multiple staff and
 The project relies exclusively on native Python data structures, set operations, and custom control flow with **zero third-party dependencies**. 
 
 By deliberately avoiding abstraction-heavy frameworks like Pandas or NumPy, every spatial algorithm and state mutation explicitly demonstrates raw algorithmic complexity ($O(1)$ set lookups vs. linear scans), explicit boundary defenses, and deterministic memory mutation without external package overhead.
+![set_applications in plant comparison](images/compare_plants.png)
 
-### Scale & Setting
-he system models a large-scale agricultural enterprise operating across multiple field plots, field personnel, and heavy machinery assets.
 
 ### Core System Bottlenecks
 1. **Data Integrity & Visibility:** Daily field operations relied on analog data logging, creating isolated data silos, high human error rates, and zero real-time querying capabilities for operational ledger audits.
@@ -26,14 +25,7 @@ Design and build a zero-dependency Digital Twin in Python to enforce defensive s
 
 ---
 
-## Technical Stack & Architectural Constraints
 
-The project relies exclusively on native Python data structures, set operations, and custom control flow with **zero third-party dependencies**. 
-
-By deliberately avoiding abstraction-heavy frameworks like Pandas or NumPy, every spatial algorithm and state mutation explicitly demonstrates raw algorithmic complexity ($O(1)$ set lookups vs. linear scans), explicit boundary defenses, and deterministic memory mutation without external package overhead.
-
-![set_applications in plant comparison](images/compare_plants.png)
----
 
 ## Architectural Deep Dives & Code Proofs
 
@@ -44,8 +36,9 @@ By deliberately avoiding abstraction-heavy frameworks like Pandas or NumPy, ever
 ![record_harvest function implementation and execution output](images/record_harvest.png)
 
 ## Poor resource management
-* **Problem:** The tractors ended up wasting resources mainly fuel due to poor ploughing techniques
-* **solution** Implement Boustrophedon sweep in ploughing by ccontinuous iteration to find the most suitable
+* Problem: Standard left-to-right grid sweeps force heavy machinery to loop back across previously plowed rows, driving up fuel consumption and field compaction.
+
+* Solution: A custom Boustrophedon path generation algorithm that alternates direction on adjacent rows, ensuring continuous field coverage with zero spatial overlap.
   <table>
   <tr>
     <td width="50%">
@@ -59,9 +52,5 @@ By deliberately avoiding abstraction-heavy frameworks like Pandas or NumPy, ever
   </tr>
 </table>
 
-```python
-def record_harvest(registry, farm_id, crop, kg):
-    if farm_id not in registry:
-        registry[farm_id] = {}
-    if crop not in registry[farm_id]:
-        registry[farm_id][crop] = 0
+## key Technical Outcomes: 
+1. Operates on standard Python deployments without pip dependencies, ideal for embedded edge systems deployed on remote farm machinery.Spatial 2.Efficiency: Reduced turning overhead and eliminated duplicate spatial coverage, directly lowering operational fuel usage across simulated field 3.trials.Deterministic Execution: Guaranteed $O(1)$ dictionary updates and linear time path generation without runtime dynamic library overhead.
