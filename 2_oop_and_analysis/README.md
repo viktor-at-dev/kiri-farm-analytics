@@ -44,3 +44,5 @@ Enforcing strict type boundaries and range validation at class instantiation/cre
 Vectorized .groupby() and array aggregation bypass slow CPython loops, processing regional survey summaries in a single execution pass.
 ![Pandas at work](images/top_performing_crops.png)
 
+### Evidence of work
+![git log](images/git_log.png)

@@ -8,9 +8,9 @@ This table tracks the status of each analytical module. Completed work is marked
 
 | Module | Status | Primary Deliverable |
 | :--- | :--- | :--- |
-| [Python Foundations](1_python_foundations/) | 🟢 Planned | Case Study |
-| [OOP & Analysis](2_oop_and_analysis/) | 🔴 Planned | Engineering Report |
-| [Statistical Audit](3_statistical_audit/) | 🔴 Planned | Findings Report |
+| [Python Foundations](1_python_foundations/) | 🟢 **ACTIVE**. | Case Study |
+| [OOP & Analysis](2_oop_and_analysis/) |  🟢 **ACTIVE**.| Engineering Report |
+| [Statistical Audit](3_statistical_audit/) | 🟢 **ACTIVE**| Findings Report |
 | [Regression Modeling](4_regression_modeling/) | 🔴 Planned | Model Card & Dev Log |
 | [Classification DSS](5_classification_dss/) | 🔴 Planned | Operations Manual |
 | [Model Selection](6_model_selection/) | 🔴 Planned | Decision Records (ADRs) |
@@ -25,4 +25,4 @@ This table tracks the status of each analytical module. Completed work is marked
 - **Source Policy**: Raw data (.db, .csv) and notebooks (.ipynb) are excluded by design to prioritize professional documentation. 
 
 ---
-*Maintained by [Your Name/Username]* 
+*Maintained by [viktor-at-dev]* 
