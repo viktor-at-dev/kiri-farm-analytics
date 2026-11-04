@@ -46,3 +46,7 @@ Vectorized .groupby() and array aggregation bypass slow CPython loops, processin
 
 ### Evidence of work
 ![git log](images/git_log.png)
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.auto-render.min.js" onload="renderMathInElement(document.body);"></script>
